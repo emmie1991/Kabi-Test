@@ -57,11 +57,13 @@ h2 {
 
 /* .scroll-lock {
   overflow-y: hidden;
-} */
+} when item-more is clicked,
+disabled when "nazaj na seznam"
+still need the sticky nav*/
 
 header {
   max-width: 1140px;
-  min-width: 561px;
+  min-width: 500px;
   margin: auto;
   padding: 30px 0;
 }
@@ -114,7 +116,7 @@ nav a {
 }
 
 
-/* items-main-container */
+/* items main container */
 
 .section-items {
   max-width: 1141px;
@@ -157,18 +159,6 @@ nav a {
   cursor: default;
 }
 
-/* .item-card {
-  display: block;
-  width: 360px;
-  border-radius: var(--radius);
-  background: var(--clr-item);
-}
-
-.more {
-  display: flex;
-  align-content:flex-end;
-} */
-
 .item-title {
   text-transform: uppercase;
   padding: 19px 30px 0 30px;
@@ -196,14 +186,10 @@ i {
 }
 
 
-
-/* item.html */
-
+/* item detail card, modal */
 .section-item {
-  display: flex;
   max-width: 1141px;
-  min-width: 561px;
-  justify-content: center;
+  min-width: 500px;
   margin:auto;
 }
 
@@ -214,13 +200,14 @@ i {
   margin-top: 30px;
 }
 
-.item-details {
+/*JS*/
+.item-details { 
   display: flex;
   flex-direction: row;
 }
 
 .item-picture {
-  width: 361px;
+  width: 360px;
   height: 203px;
   border-radius: var(--radius);
 }
@@ -237,26 +224,10 @@ i {
   background: var(--clr-item);
 }
 
-.item-details h1 {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.item-details p {
-  display: flex;
-  justify-content: flex-start;
-}
-
-
-
-
 
 /* modal */
-
 .modal {
   display:none;
-  /* display:flex; */
-  justify-content: center;
   position:fixed;
   z-index:5;
   left: 0px;
@@ -278,27 +249,37 @@ i {
   background: var(--clr-item);
 }
 
-
+/* animation */
 @keyframes modalopen {
   from{opacity: 0}
   to {opacity: 1}
 }
 
-
+/* mobile */
 @media (max-width: 500px) {
+  header {
+    min-width: 500px;
+  }
+  
   .nav-item a {
     padding: 3px 16px;
   }
 
-  .nav-item:nth-child(5) {
-    border: none;
+  .items-main-container {
+    justify-content: center;
+  }
+  
+  .item-details { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  /* modal */
-
-  .closeBtn:hover {
-    background: var(--clr-bg);
+  .content {
+    padding-top:19px;
+    width: 360px;
   }
+  
 }
 
 
