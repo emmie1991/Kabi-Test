@@ -11,90 +11,104 @@
   <link rel="stylesheet" href="src/style.css">
   <script src="https://kit.fontawesome.com/58766fca35.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="scroll-lock">
   <header>
     <div class="logo">
       <img src="src/images/logo@2x.png" alt="">
     </div>
-    <nav class="nav">
-      <ul class="nav_list">
-        <li class="nav_item"><a href="index.html">
-          <i class="fa-solid fa-house-chimney"></i>Domov</a></li>
-        <li class="nav_item"><a href="#">O nas</a></li>
-        <li class="nav_item"><a href="#">Kontakt</a></li>
-        <li class="nav_item"><a href="#">Pišite nam</a></li>
-        <li class="nav_item"><a href="index.html">IZDEKLI</a></li>
-      </ul>
+    <nav>
+      <div class="nav-item"><a href="index.html">
+        <i class="fa-solid fa-house-chimney"></i>Domov</a></div>
+      <div class="nav-item"><a href="#">O nas</a></div>
+      <div class="nav-item"><a href="#">Kontakt</a></div>
+      <div class="nav-item"><a href="#">Pišite nam</a></div>
+      <div class="nav-item"><a href="index.html">IZDEKLI</a></div>
     </nav>
   </header>
 
-  <!-- items -->
   <section class="section-items" id="section-items">
-    <div class="items">
-      <div class="item"><!-- /item -->
-        <img class="item__picture" src="src/images/img@2x.png" alt="">
-        <h1 class="item__title">Izdelek 1</h1>
-        <h2 class="item__subtitle">Podnaslov izdelka 1</h2>
+    <div class="items-main-container start-fl">
+      <!-- item -->
+      <div class="item-1 item-card">
+        <img class="item-picture" src="src/images/img@2x.png" alt="">
+        <h1 class="item-title">Izdelek 1</h1>
+        <h2 class="item-subtitle">Podnaslov izdelka 1</h2>
         <p>Odstavek 1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eveniet quas accusamus consequuntur, vel perferendis repellat nisi? Corrupti quam voluptatem, quisquam in quibusdam, nemo vel maiores, reprehenderit fuga facere cumque.</p>
         <p>Odstavek 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laudantium?</p>
-        <span class="btn" id="modalBtn"><i class="fa-solid fa-plus"></i>več o izdelku 1</span>
-      </div><!-- /item -->
+        <div class="item-more"><span class="btn" id="modalBtn"><i class="fa-solid fa-plus"></i>več o izdelku 1</span></div>
+      </div>
+      <!-- /item -->
 
       <!-- Modal -->
       <div id="simpleModal" class="modal">
         <div class="modal-content">
-          <section class="section-item" id="section-item"><!-- item details-->
-            <div class="item_container">
-              <div class="item_details">
-                <img class="item_details_picture" src="src/images/img@2x.png" alt="">
+          <section class="section-item" id="section-item">
+            <!-- item details-->
+            <div class="item-container">
+              <div class="item-details">
+                <img class="item-picture" src="src/images/img@2x.png" alt="">
                 <div class="content">
-                  <h1 class="item_title">Izdelek 1</h1>
-                  <h2 class="item__subtitle">Podnaslov izdelka 1</h2>
+                  <h1 class="item-title">Izdelek 1</h1>
+                  <h2 class="item-subtitle">Podnaslov izdelka 1</h2>
                   <p>Odstavek 1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eveniet quas accusamus consequuntur, vel perferendis repellat nisi? Corrupti quam voluptatem, quisquam in quibusdam, nemo vel maiores, reprehenderit fuga facere cumque.</p>
                   <p>Odstavek 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laudantium?</p>
                   <span class="btn closeBtn"><i class="fa-solid fa-chevron-left"></i>nazaj na seznam</span>
                 </div>
               </div>
             </div>
-          </section><!-- /item details-->
+            <!-- /item details-->
+          </section>
         </div>
       </div>
 
-      <div class="item">
-        <img class="item__picture" src="src/images/img@2x.png" alt="">
-        <h1 class="item__title">Izdelek 2</h1>
-        <h2 class="item__subtitle">Podnaslov izdelka 2</h2>
+      <div class="item-2 item-card">
+        <img class="item-picture" src="src/images/img@2x.png" alt="">
+        <h1 class="item-title">Izdelek 2</h1>
+        <h2 class="item-subtitle">Podnaslov izdelka 2</h2>
         <p>Odstavek 1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eveniet quas accusamus consequuntur, vel perferendis repellat nisi? Corrupti quam voluptatem, quisquam in quibusdam, nemo vel maiores, reprehenderit fuga facere cumque.</p>
         <p>Odstavek 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laudantium?</p>
         <p>Odstavek 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laudantium?</p>
-        <a href="src/item.html" class="btn"><i class="fa-solid fa-plus"></i>več o izdelku 2</a>
-      </div><!-- /item -->
-      <div class="item">
-        <img class="item__picture" src="src/images/img@2x.png" alt="">
-        <h1 class="item__title">Izdelek 3</h1>
-        <h2 class="item__subtitle">Podnaslov izdelka 3</h2>
+        <div class="item-more"><a href="src/item.html" class="btn"><i class="fa-solid fa-plus"></i>več o izdelku 2</a></div>
+      </div>
+      <!-- /item -->
+      <!-- item -->
+      <div class="item-3 item-card">
+        <img class="item-picture" src="src/images/img@2x.png" alt="">
+        <h1 class="item-title">Izdelek 3</h1>
+        <h2 class="item-subtitle">Podnaslov izdelka 3</h2>
         <p>Odstavek 1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eveniet quas accusamus consequuntur, vel perferendis repellat nisi? Corrupti quam voluptatem, quisquam in quibusdam, nemo vel maiores, reprehenderit fuga facere cumque.</p>
         <p>Odstavek 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laudantium?</p>
         <p>Odstavek 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laudantium?</p>
         <p>Odstavek 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laudantium?</p>
-        <a href="src/item.html" class="btn"><i class="fa-solid fa-plus"></i>več o izdelku 3</a>
-      </div><!-- /item -->
-      <div class="item">
-        <img class="item__picture" src="src/images/img@2x.png" alt="">
-        <h1 class="item__title">Izdelek 4</h1>
-        <h2 class="item__subtitle">Podnaslov izdelka 4</h2>
+        <div class="item-more"><span class="btn" id="modalBtn"><i class="fa-solid fa-plus"></i>več o izdelku 3</span></div>
+      </div>
+      <!-- /item -->
+      <!-- item -->
+      <div class="item-4 item-card">
+        <img class="item-picture" src="src/images/img@2x.png" alt="">
+        <h1 class="item-title">Izdelek 4</h1>
+        <h2 class="item-subtitle">Podnaslov izdelka 4</h2>
         <p>Odstavek 1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eveniet quas accusamus consequuntur, vel perferendis repellat nisi? Corrupti quam voluptatem, quisquam in quibusdam, nemo vel maiores, reprehenderit fuga facere cumque.</p>
         <p>Odstavek 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laudantium?</p>
-        <a href="src/item.html" class="btn"><i class="fa-solid fa-plus"></i>več o izdelku 4</a>
-      </div><!-- /item -->
-      <div class="item">
-        <img class="item__picture" src="src/images/img@2x.png" alt="">
-        <h1 class="item__title">Izdelek 5</h1>
-        <h2 class="item__subtitle">Podnaslov izdelka 5</h2>
+        <div class="item-more"><span class="btn" id="modalBtn"><i class="fa-solid fa-plus"></i>več o izdelku 4</span></div>
+      </div>
+      <!-- /item -->
+      <!-- item -->
+      <div class="item-5 item-card">
+        <img class="item-picture" src="src/images/img@2x.png" alt="">
+        <h1 class="item-title">Izdelek 5</h1>
+        <h2 class="item-ubtitle">Podnaslov izdelka 5</h2>
         <p>Odstavek 1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eveniet quas accusamus consequuntur, vel perferendis repellat nisi? Corrupti quam voluptatem, quisquam in quibusdam, nemo vel maiores, reprehenderit fuga facere cumque.</p>
         <p>Odstavek 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laudantium?</p>
-        <a href="src/item.html" class="btn"><i class="fa-solid fa-plus"></i>več o izdelku 5</a>
-      </div><!-- /item -->
+        <p>Odstavek 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laudantium?</p>
+        <p>Odstavek 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laudantium?</p>
+        <p>Odstavek 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laudantium?</p>
+        <p>Odstavek 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laudantium?</p>
+        <p>Odstavek 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laudantium?</p>
+        <p>Odstavek 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laudantium?</p>
+        <div class="item-more"><span class="btn" id="modalBtn"><i class="fa-solid fa-plus"></i>več o izdelku 5</span></div>
+      </div>
+      <!-- /item -->
     </div>
   </section>
   <script src="src/main.js"></script>
