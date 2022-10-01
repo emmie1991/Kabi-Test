@@ -12,6 +12,7 @@ $(document).ready(function(){
     $('.modal, .scroll-lock').addClass('active');
   })
   $('.closeBtn, .modal').click(function(){
+    $('#modal-more-content').empty()
     $('.modal, .scroll-lock').removeClass('active')
   })
 })
