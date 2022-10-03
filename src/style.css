@@ -196,7 +196,7 @@ i {
 .modal-container .boxes {
   max-width: 1141px;
   min-width: 500px;
-  margin:auto;
+  margin: auto;
 }
 
 .modal-container .box {
@@ -292,6 +292,7 @@ i {
   .item-details { 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 
