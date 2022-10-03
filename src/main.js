@@ -18,7 +18,7 @@ $(document).ready(function(){
     $('.closeBtn').click(function(){
       $('#modal-more-content').empty()
       $('.modal, .scroll-lock').removeClass('active')})
-    }, 100);
+    }, 100); 
   })
 
 
